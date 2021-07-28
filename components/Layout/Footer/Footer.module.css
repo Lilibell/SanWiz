@@ -1,0 +1,13 @@
+.footer__wrapper {
+  height: 2rem;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+.footer__text {
+  font-size: 1.2rem;
+  color: #061e23;
+}

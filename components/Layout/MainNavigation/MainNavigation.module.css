@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&display=swap");
+
+.navbar {
+  height: 8rem;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, #2095ac, #30bdd9);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar__logo {
+  font-family: "Expletus Sans", cursive;
+  font-size: 3.5rem;
+  color: white;
+  margin-left: 3rem;
+  padding: 0.3rem 0;
+}
+
+.navbar__menu {
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 8rem;
+  left: -100%;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.navbar__menu--active {
+  background-image: linear-gradient(to right bottom, #2095ac, #30bdd9);
+  left: 0;
+  z-index: 1;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.navbar__link a {
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: none;
+  border-top: 1px solid #fff;
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 100%;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.navbar__link a:hover {
+  color: hsl(35, 100%, 75%);
+  overflow: hidden;
+}
+
+.navbar__icon {
+  font-size: 3rem;
+  color: white;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+@media (min-width: 56.25em) {
+  .navbar__logo {
+    margin-left: 4rem;
+  }
+
+  .navbar__menu {
+    list-style: none;
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .navbar__icon {
+    display: none;
+  }
+
+  .navbar__link a {
+    margin-right: 4rem;
+    text-align: center;
+    border: none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+
+  .navbar__link a:hover {
+    margin-right: 4rem;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+}

@@ -1,0 +1,33 @@
+.sidenav {
+  max-height: calc(100vh - 8rem);
+  width: 25%;
+  position: fixed;
+  top: 8rem;
+  z-index: 1;
+  border-right: 1px solid black;
+  background-color: hsl(190, 40%, 90%);
+  overflow-y: scroll;
+}
+
+.sidenav__list {
+  list-style: none;
+  margin: 2rem 0;
+}
+
+.sidenav__item a {
+  text-decoration: none;
+  color: #061e23;
+  font-size: 1.8rem;
+  display: block;
+  margin: 1rem 0;
+  padding: 0.2rem 0;
+}
+
+.sidenav__item a.active {
+  color: #2095ac;
+  text-decoration: underline;
+}
+
+.sidenav__item a:hover:not(.active) {
+  color: #2095ac;
+}

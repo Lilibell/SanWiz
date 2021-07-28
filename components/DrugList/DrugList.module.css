@@ -1,0 +1,62 @@
+.drugs__heading {
+  font-size: 3rem;
+  margin: 14rem 0 4rem 4rem;
+  color: #061e23;
+}
+
+.drugs__list {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 4rem 0;
+}
+
+.drugs__item a {
+  display: inline-block;
+  width: 100%;
+  padding: 1.5rem 4rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #061e23;
+  background-image: linear-gradient(
+    120deg,
+    #ffa629 0%,
+    #ffa629 50%,
+    transparent 50%
+  );
+  background-size: 220%;
+  background-position: 100%;
+  transition: background-position 0.7s;
+  -webkit-transition: background-position 0.7s;
+  -moz-transition: background-position 0.7s;
+  -ms-transition: background-position 0.7s;
+  -o-transition: background-position 0.7s;
+}
+
+.drugs__item a:hover {
+  background-position: 0%;
+  color: #fff;
+}
+
+@media (min-width: 700px) {
+  .drugs__list {
+    display: grid;
+    grid-gap: 1rem 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(13, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .drugs__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .drugs__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+  }
+}

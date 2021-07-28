@@ -1,0 +1,36 @@
+.pagination {
+  width: 90%;
+  height: auto;
+  margin: 10rem auto 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination__links {
+  width: auto;
+}
+
+.pagination a {
+  color: #061e23;
+  font-size: 1.3rem;
+  padding: 0.2rem 0;
+  margin: 0 0.6rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.pagination__arrow {
+  font-size: 2rem;
+  padding: 0 1rem;
+  color: #061e23;
+}
+
+.pagination a.active {
+  color: #2095ac;
+  border-bottom: 1px solid #2095ac;
+}
+
+.pagination a:hover:not(.active) {
+  color: #2095ac;
+}

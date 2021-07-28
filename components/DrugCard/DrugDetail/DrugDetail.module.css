@@ -1,0 +1,48 @@
+.drug__accordion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.drug__accordion-button {
+  font-size: 2rem;
+  color: #2095ac;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.drug__subheading {
+  font-size: 2rem;
+  color: #2095ac;
+}
+
+.drug__property {
+  display: block;
+  font-size: 1.8rem;
+  color: #061e23;
+  margin: 0 2rem;
+  height: 0;
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  -webkit-transform: translateY(-20%);
+  -moz-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  -o-transform: translateY(-20%);
+}
+
+.drug__property--expanded {
+  height: auto;
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}

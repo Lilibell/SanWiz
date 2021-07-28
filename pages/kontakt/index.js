@@ -1,20 +1,20 @@
 import { Fragment } from "react";
 import Head from "next/head";
-import HomeContent from "../components/HomeContent/HomeContent";
+import ContactContent from "../../components/ContactContent/ContactContent";
 
-const Startseite = () => {
+const Kontakt = () => {
   return (
     <Fragment>
       <Head>
-        <title>SanWiz - Wissen für Sanitäter</title>
+        <title>SanWiz - Kontakt</title>
         <meta
           name="description"
           content="Lernhilfe für Medikamente im Rettungsdienst"
         />
       </Head>
-      <HomeContent />
+      <ContactContent />
     </Fragment>
   );
 };
 
-export default Startseite;
+export default Kontakt;

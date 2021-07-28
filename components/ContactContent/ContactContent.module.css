@@ -1,0 +1,39 @@
+.contact__wrapper {
+  height: auto;
+  width: 90%;
+  margin: 12rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__heading {
+  font-size: 3rem;
+  color: #061e23;
+  text-align: center;
+}
+
+.contact__text {
+  font-size: 1.8rem;
+  color: #061e23;
+  line-height: 2.4rem;
+}
+
+@media (min-width: 600px) {
+  .contact__wrapper {
+    width: 80%;
+  }
+}
+
+@media (min-width: 900px) {
+  .contact__wrapper {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact__wrapper {
+    width: 50%;
+  }
+}
