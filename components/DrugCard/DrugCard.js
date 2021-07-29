@@ -9,8 +9,6 @@ const DrugCard = (props) => {
       </div>
       <div className={styles.drug__properties}>
         <DrugDetail property="Wirkweise" details={props.wirkweise} />
-        <DrugDetail property="Wirkeintritt" details={props.wirkeintritt} />
-        <DrugDetail property="Wirkdauer" details={props.wirkdauer} />
         <DrugDetail property="Indikation" details={props.indikation} />
         <DrugDetail
           property="Kontraindikation"
@@ -21,6 +19,8 @@ const DrugCard = (props) => {
           property="Maßnahmen bei Nebenwirkungen"
           details={props.nwmaßnahmen}
         />
+        <DrugDetail property="Wirkeintritt" details={props.wirkeintritt} />
+        <DrugDetail property="Wirkdauer" details={props.wirkdauer} />
       </div>
     </div>
   );

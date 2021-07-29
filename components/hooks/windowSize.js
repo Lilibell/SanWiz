@@ -4,6 +4,7 @@ const useWindowSize = () => {
   const [size, setSize] = useState([]);
 
   useEffect(() => {
+    setSize([window.innerHeight, window.innerWidth]);
     const handleRezise = () => {
       setSize([window.innerHeight, window.innerWidth]);
     };
