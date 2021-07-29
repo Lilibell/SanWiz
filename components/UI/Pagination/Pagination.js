@@ -8,7 +8,7 @@ import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 const Pagination = (props) => {
   const [currentPage, setCurrentPage] = useState(
     props.drugList.indexOf(props.currentPageName)
-  );
+  ); // here: index, not drug name, is used to calculate the previous and next drug
   const [displayedLinks, setDisplayedLinks] = useState([]);
 
   const changePageHandler = (newPageName) => {

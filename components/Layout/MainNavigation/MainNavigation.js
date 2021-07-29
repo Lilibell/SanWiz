@@ -10,7 +10,6 @@ const MainNavigation = () => {
 
   const iconClickHandler = () => {
     setIconClicked((prevState) => !prevState);
-    console.log(iconClicked);
   };
 
   const navMenuClasses = `${styles.navbar__menu} ${
@@ -19,17 +18,17 @@ const MainNavigation = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navbar__logo}>
+      <div className={styles.navbar__logo} onClick={iconClickHandler}>
         <Link href="/">SanWiz</Link>
       </div>
       <ul className={navMenuClasses}>
-        <li className={styles.navbar__link}>
+        <li className={styles.navbar__link} onClick={iconClickHandler}>
           <Link href="/">Start</Link>
         </li>
-        <li className={styles.navbar__link}>
+        <li className={styles.navbar__link} onClick={iconClickHandler}>
           <Link href="/karteikarten">Medikamente</Link>
         </li>
-        <li className={styles.navbar__link}>
+        <li className={styles.navbar__link} onClick={iconClickHandler}>
           <Link href="/kontakt">Kontakt</Link>
         </li>
       </ul>
