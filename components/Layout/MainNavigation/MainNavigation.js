@@ -19,7 +19,9 @@ const MainNavigation = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navbar__logo}>SanWiz</div>
+      <div className={styles.navbar__logo}>
+        <Link href="/">SanWiz</Link>
+      </div>
       <ul className={navMenuClasses}>
         <li className={styles.navbar__link}>
           <Link href="/">Start</Link>

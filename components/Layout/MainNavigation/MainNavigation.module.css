@@ -14,11 +14,15 @@
 }
 
 .navbar__logo {
-  font-family: "Expletus Sans", cursive;
-  font-size: 3.5rem;
-  color: white;
   margin-left: 3rem;
   padding: 0.3rem 0;
+}
+
+.navbar__logo a {
+  font-family: "Expletus Sans", cursive;
+  font-size: 3.5rem;
+  text-decoration: none;
+  color: white;
 }
 
 .navbar__menu {

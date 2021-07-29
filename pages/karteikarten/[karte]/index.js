@@ -15,11 +15,9 @@ const DrugPage = (props) => {
 
   useEffect(() => {
     const start = () => {
-      console.log("start");
       setIsLoading(true);
     };
     const end = () => {
-      console.log("finished");
       setIsLoading(false);
     };
     Router.events.on("routeChangeStart", start);
@@ -34,31 +32,32 @@ const DrugPage = (props) => {
 
   const [height, width] = useWindowSize();
 
-  let navType;
-  let style;
-
-  if (width < 900) {
-    navType = (
+  let navType =
+    width < 900 ? (
       <Pagination
         drugList={props.drugList}
         currentPageName={props.drugData.name}
       />
+    ) : (
+      <SideNavigation
+        drugList={props.drugList}
+        currentPageName={props.drugData.name}
+      />
     );
-    style = {
-      position: "fixed",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-    };
-  } else {
-    navType = <SideNavigation drugList={props.drugList} />;
-    style = {
-      position: "fixed",
-      top: "50%",
-      left: "60%",
-      transform: "translate(-50%, -50%)",
-    };
-  }
+  let style =
+    width < 900
+      ? {
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }
+      : {
+          position: "fixed",
+          top: "50%",
+          left: "60%",
+          transform: "translate(-50%, -50%)",
+        };
 
   return (
     <Fragment>
