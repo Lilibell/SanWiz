@@ -20,7 +20,9 @@ const DrugDetail = (props) => {
   return (
     <Fragment>
       <div className={styles.drug__accordion}>
-        <h2 className={styles.drug__subheading}>{props.property}</h2>
+        <h2 onClick={toggleDetails} className={styles.drug__subheading}>
+          {props.property}
+        </h2>
         <div
           onClick={toggleDetails}
           className={styles["drug__accordion-button"]}
